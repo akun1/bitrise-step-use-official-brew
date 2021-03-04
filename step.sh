@@ -1,7 +1,9 @@
 #!/bin/bash
 set -ex
 
-echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
+cd "$(brew --repository)/Library/Taps/homebrew/homebrew-core"
+git remote set-url origin https://github.com/Homebrew/homebrew-core.git
+brew update
 
 #
 # --- Export Environment Variables for other Steps:
